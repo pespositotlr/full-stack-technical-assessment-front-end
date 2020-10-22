@@ -1,0 +1,9 @@
+div a.active, ul li.active{
+    font-weight: bold!important;
+    font-style: italic!important;
+    color: #fff!important;
+}
+
+.nav-fea {
+    width: 100%;
+}

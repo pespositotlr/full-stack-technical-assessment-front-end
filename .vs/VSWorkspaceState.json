@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\features",
+    "\\src\\features\\counter",
+    "\\src\\hoc",
+    "\\src\\hoc\\Auxiliary",
+    "\\src\\store",
+    "\\src\\store\\actions",
+    "\\src\\store\\reducers",
+    "\\src\\Utility"
+  ],
+  "SelectedNode": "\\src\\components\\Home\\Home.js",
+  "PreviewInSolutionExplorer": false
+}
