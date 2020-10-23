@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Col, Row, Label } from 'react-bootstrap';
+import { Table, Col, Row } from 'react-bootstrap';
 import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import Item from '../../../components/ItemComponents/Item/Item';
 

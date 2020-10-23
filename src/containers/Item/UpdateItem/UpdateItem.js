@@ -54,9 +54,9 @@ class UpdateItem extends Component {
         event.preventDefault();
 
         const itemToUpdate = {
-            id: parseInt(this.props.match.params.id),
+            id: parseInt(this.props.match.params.id, 10),
             itemName: this.state.itemForm.itemName.value,
-            cost: parseInt(this.state.itemForm.cost.value)
+            cost: parseInt(this.state.itemForm.cost.value, 10)
         }
 
         const url = "/api/UpdateItem/";

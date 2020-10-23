@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Aux from '../../../hoc/Auxiliary/Auxiliary';
 import { connect } from 'react-redux';
-import CurrencyFormat from 'react-currency-format';
 import * as repositoryActions from '../../../store/actions/repositoryActions';
 
 class MaxPriceByName extends Component {

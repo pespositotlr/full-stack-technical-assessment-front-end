@@ -1,6 +1,6 @@
 import React from 'react';
 import Aux from '../../hoc/Auxiliary/Auxiliary';
-import { FormGroup, Col, FormControl, FormLabel } from 'react-bootstrap';
+import { FormGroup, Col, FormControl } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './Input.css';

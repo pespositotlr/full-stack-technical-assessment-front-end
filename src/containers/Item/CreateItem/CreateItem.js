@@ -33,7 +33,7 @@ class CreateItem extends Component {
 
         const itemToCreate = {
             itemName: this.state.itemForm.itemName.value,
-            cost: parseInt(this.state.itemForm.cost.value)
+            cost: parseInt(this.state.itemForm.cost.value, 10)
         }
 
         const url = '/api/CreateItem';
