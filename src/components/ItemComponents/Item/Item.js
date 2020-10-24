@@ -27,7 +27,7 @@ const item = (props) => {
                 <td>{props.item.itemName}</td>
                 <td><CurrencyFormat value={props.item.cost} displayType={'text'} thousandSeparator={true} prefix={'$'} /></td>
                 <td>
-                    <Button onClick={() => redirectToItemDetails(props.item.id, props.history)}>Details</Button>
+                    <Button className="btn btn-primary" onClick={() => redirectToItemDetails(props.item.id, props.history)}>Details</Button>
                 </td>
                 <td>
                     <Button className="btn btn-success" onClick={() => redirectToUpdateItem(props.item.id, props.history)}>Update</Button>

@@ -9,6 +9,5 @@ it("renders welcome div", () => {
     const welcome = <div className="homeText">
         Welcome to my Test Application!
         </div>;
-    console.log(wrapper.debug());
     expect(wrapper.contains(welcome)).toEqual(true);
 });
