@@ -7,6 +7,7 @@ import Aux from '../../../hoc/Auxiliary/Auxiliary';
 
 class ItemDetails extends Component {
     componentDidMount = () => {
+        console.log("Performing componentDidMount!!!")
         let id = this.props.match.params.id;
         let url = '/api/GetItem/' + id;
         this.props.onGetData(url, { ...this.props })

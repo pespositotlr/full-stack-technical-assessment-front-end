@@ -2,7 +2,7 @@
 import renderer from 'react-test-renderer';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import MaxPriceByName from '../containers/Item/MaxPriceByName/MaxPriceByName';
+import MaxPricesPerItem from '../containers/Item/MaxPricesPerItem/MaxPricesPerItem';
 import repositoryReducer from '../store/reducers/repositoryReducer';
 import errorHandlerReducer from '../store/reducers/errorHandlerReducer';
 import thunk from 'redux-thunk';
@@ -16,9 +16,9 @@ const rootReducers = combineReducers({
 
 const store = createStore(rootReducers, applyMiddleware(thunk));
 
-describe('<MaxPricePerItem /> component', () => {
+describe('<MaxPricesPerItem /> component', () => {
     it("should render without crashing", () => {        
-        shallow(<MaxPriceByName store={store} />);
+        shallow(<MaxPricesPerItem store={store} />);
     });
 });
 
