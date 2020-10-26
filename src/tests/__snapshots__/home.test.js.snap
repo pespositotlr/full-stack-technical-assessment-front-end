@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> component renders correctly 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-md-12"
+  >
+    <div
+      className="homeText"
+    >
+      Welcome to my Test Application!
+    </div>
+  </div>
+</div>
+`;
