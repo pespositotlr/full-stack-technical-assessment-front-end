@@ -21,7 +21,6 @@ const mockStore = configureMockStore(middleware);
 
 const store = mockStore({
     repository: {
-        match: { params: { id: 8 } },
         data: {
             id: 888,
             itemName: "Test Item 888",
@@ -40,5 +39,15 @@ describe('<ItemDetails /> component', () => {
         expect(wrapper.text()).toContain("Test Item 888");
     });
 
+    it("should mount and have 6 columns", () => {
+        const wrapper = mount(<ItemDetails store={store} match={{ params: { id: 888 }, isExact: true, path: "", url: "" }} />);
+        expect(wrapper.find(Col).length).toEqual(6);
+    });
+
+    it("should show currency value", () => {
+        const wrapper = mount(<ItemDetails store={store} match={{ params: { id: 888 }, isExact: true, path: "", url: "" }} />);
+        const value = wrapper.find("CurrencyFormat").props().value;
+        expect(value).toEqual(888);
+    });
 });
 
