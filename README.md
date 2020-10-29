@@ -11,3 +11,6 @@ This uses react-bootstrap for visuals and axios for HTTP client.
 
 A lot of this front-end app was based on examples found in this tutorial:
 https://code-maze.com/react-net-core-http-axios-redux/
+
+A current version of this app running connected to the back end running on Azure can be found here:
+https://full-stack-technical-assessment-front-end.azurewebsites.net/
