@@ -23,8 +23,13 @@ const checkValidity = (value, validation) => {
         }
 
         if (validationObject.isValid && validation.maxLength) {
-            validationObject.isValid = value.length <= 60;
-            validationObject.errorMessage = 'Not allowed more than 60 charactes';
+            validationObject.isValid = value.length <= validation.maxLength;
+            validationObject.errorMessage = 'Not allowed more than ' + validation.maxLength + ' charactes';
+        }
+
+        if (validationObject.isValid && validation.maxValue) {
+            validationObject.isValid = value <= validation.maxValue;
+            validationObject.errorMessage = 'Values larger than ' + validation.maxValue + ' not allowed.';
         }
 
         return validationObject;
